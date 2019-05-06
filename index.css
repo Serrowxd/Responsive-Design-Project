@@ -31,7 +31,7 @@ body {
     vertical-align: middle;
     display: inline-block;
     text-align: right;
-    width: calc(100% - 486px);    
+    width: calc(100% - 536px);    
 }
 
 .main-nav_items {
@@ -66,4 +66,25 @@ body {
     color: white;
     padding: 0;
     margin: 0;
+}
+
+.buy-now-container {
+    width: 100%;
+
+}
+
+.buy-now-container h1, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.buy-now {
+    padding-left: 25px;
+    width: 22%;
+    text-align: center;
+    display: inline-block
+}
+
+.buy-now img {
+    width: 50%;
 }
