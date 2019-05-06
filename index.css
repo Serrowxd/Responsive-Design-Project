@@ -70,14 +70,19 @@ body {
 }
 
 .product_overview-wrapper {
-    padding-top: 10%;   
+    padding-top: 10%;
+    color: white; 
 }
 
-.product_overview-wrapper > a {
-    opacity: 100%;
-    color: white;
-    text-decoration: none;
+.buy-now-btn-top {
+    margin: 0 auto;
+    width: 10%;
+    border: solid 3px white;
     font-size: 30px;
+    color: white;
+}
+
+.buy-now-btn-top:hover {
     background-color: #356B2E;
 }
 
@@ -134,25 +139,36 @@ body {
     width: 50%;
 }
 
+.buy-now-btn {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    background-color: white;
+    border: solid 2px #006a2d;
+    width: 25%;
+}
+.buy-now-btn:hover {
+    background-color: #006a2d;
+    color: white;
+}
+
+.buy-now-btn p {
+    margin: 5px;
+}
+
 .top-sellers {
 background-image: url("./images/parallax.png");
-height: 330px; 
-
+height: 300px; 
 /* Create the parallax scrolling effect */
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+text-align: center;
 }
 
-.top-sellers-container {
-    width: 100%;
-    display: inline-block;
+.top-sellers h1 {
+    color: white;
+    font-size: 55px;
+    padding: 60px;  
 }
 
-.top-sellers-product {
-    width: 10%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle; 
-}
