@@ -3,12 +3,40 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.main-header-scroll {
+    transition: 2s;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+}
+
+.main-header-scroll a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.main-header-scroll > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header_logo-scroll {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+}
+
 .main-header {
     width: 100%;
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    position: fixed;
 }
 
 .main-header a {
@@ -190,6 +218,7 @@ text-align: center;
     padding-top: 3%;
     width: 100%;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 #email-form {
@@ -198,6 +227,11 @@ text-align: center;
     outline: none;
     border: none;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.2) !important
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #submit-btn {
@@ -223,7 +257,37 @@ footer {
     display: inline-block;
 }
 
+.footer-row > i {
+    margin-left: 6px;
+}
+
 .copyright-container {
     width: 100%;
     text-align: center;
+}
+
+.fa-bitcoin:hover {
+    cursor: pointer;
+    color: #FF9900;
+}
+
+.fa-monero:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(#F1682C 60%, #4D4D4D 40%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.fa-cc-visa:hover {
+    background: -webkit-linear-gradient(#F19E33 50%, #004B88 50%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.fa-cc-discover:hover {
+    color: #1B4576;
+}
+
+.fa-paypal:hover {
+    color: #004B88;
 }
