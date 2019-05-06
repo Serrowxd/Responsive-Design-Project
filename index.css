@@ -6,7 +6,8 @@ body {
 .main-header {
     width: 100%;
     background-color: #356B2E;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
