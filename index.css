@@ -6,7 +6,7 @@ body {
 .main-header {
     width: 100%;
     background-color: #356B2E;
-    padding: 20px 45px;
+    padding: 20px;
 
 }
 
@@ -70,7 +70,6 @@ body {
 
 .buy-now-container {
     width: 100%;
-
 }
 
 .buy-now-container h1, h5 {
@@ -82,7 +81,8 @@ body {
     padding-left: 25px;
     width: 22%;
     text-align: center;
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle; 
 }
 
 .buy-now img {
