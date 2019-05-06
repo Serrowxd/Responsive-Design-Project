@@ -5,13 +5,14 @@ body {
 
 .main-header {
     width: 100%;
-    background-color: #356B2E;
+    background-color: transparent;
     padding-top: 20px;
     padding-bottom: 20px;
 
 }
 
 .main-header a {
+    margin-left: 30px;
     text-decoration: none;
     color: white;
 }
@@ -56,20 +57,62 @@ body {
 }
 
 #product_overview {
-    opacity: .7;
     background: url("./images/jumbo.jpg");
     width: 100%;
     height: 536px;
+    text-align: center;
 }
 
 #product_overview h1 {
-    
     color: white;
     padding: 0;
     margin: 0;
 }
 
+.product_overview-wrapper {
+    padding-top: 10%;   
+}
+
+.product_overview-wrapper > a {
+    opacity: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #356B2E;
+}
+
+.free-shipping-container {
+    color: white;
+    font-size: 20px;
+    background-color: #356B2E;
+    text-align: center;
+}
+
+
+.spectrum-container {
+    background-color: #EBEBEB;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.spectrum-container h3 {
+    padding-top: 30px;
+    margin: 0;
+}
+
+.spectrum-wrapper {
+    width: 100%;
+}
+
+.explain-thing {
+    display: inline-block;
+    width: 20%;
+    padding-bottom: 50px;
+}
+
 .buy-now-container {
+    background: linear-gradient(180deg,#006a2d 50%,#fff 40%);
     width: 100%;
 }
 
@@ -79,8 +122,9 @@ body {
 }
 
 .buy-now {
+    padding-top: 20px;
     padding-left: 25px;
-    width: 22%;
+    width: 23%;
     text-align: center;
     display: inline-block;
     vertical-align: middle; 
@@ -88,4 +132,27 @@ body {
 
 .buy-now img {
     width: 50%;
+}
+
+.top-sellers {
+background-image: url("./images/parallax.png");
+height: 330px; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.top-sellers-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.top-sellers-product {
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle; 
 }
