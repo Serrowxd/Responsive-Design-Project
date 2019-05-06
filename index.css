@@ -80,6 +80,7 @@ body {
     border: solid 3px white;
     font-size: 30px;
     color: white;
+    cursor: pointer;
 }
 
 .buy-now-btn-top:hover {
@@ -135,6 +136,10 @@ body {
     vertical-align: middle; 
 }
 
+.buy-now ul {
+list-style: none;
+}
+
 .buy-now img {
     width: 50%;
 }
@@ -145,6 +150,7 @@ body {
     background-color: white;
     border: solid 2px #006a2d;
     width: 25%;
+    cursor: pointer;
 }
 .buy-now-btn:hover {
     background-color: #006a2d;
@@ -153,6 +159,10 @@ body {
 
 .buy-now-btn p {
     margin: 5px;
+}
+
+.benefits {
+    text-align: center;
 }
 
 .top-sellers {
@@ -172,3 +182,48 @@ text-align: center;
     padding: 60px;  
 }
 
+
+
+
+
+.email-form {
+    padding-top: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+#email-form {
+    display: inline-block;
+    font-size: 2.3rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2) !important
+}
+
+#submit-btn {
+    display: inline-block;  
+    color: #006a2d; 
+    border-style: solid 6px #006a2d;
+    background-color: white;
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+}
+
+.footer-row {
+    text-align: center;
+    margin: 3%;
+    width: 18%;
+    display: inline-block;
+}
+
+.copyright-container {
+    width: 100%;
+    text-align: center;
+}
