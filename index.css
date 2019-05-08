@@ -8,6 +8,47 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.hide {
+    display: none;
+}
+
+.modal-backdrop {
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    filter: brightness(5%);
+    opacity: .7;
+    z-index: 2;
+    position: absolute;
+}
+
+.modal-cookies {
+    color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+}
+
+.modal-cookies__heading {
+    font-size: 3rem;
+}
+
+#modal-cookies__button {
+    width: 12rem;
+    font-size: 2.5rem;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    left: 47.5%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+
 .main-header-scroll {
     transition: 2s;
     width: 100%;
