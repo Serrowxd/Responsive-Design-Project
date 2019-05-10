@@ -6,24 +6,28 @@ let acceptCookiesButton = document.getElementById('modal-cookies__button');
 let hamburger = document.querySelector('.hamburger-toggle');
 let mobileNav = document.querySelector('.mobile-nav');
 
-window.onscroll = () => {    
-    classScroll();    
+window.onscroll = () => {
+    classScroll();
 }
 
 //event listeners
 
-acceptCookiesButton.addEventListener('click', () => {
-    backdrop.classList.add('hide');
-    modal.classList.add('hide');
-})
+acceptCookiesButton.addEventListener('click', closeModal);
 
-hamburger.addEventListener('click', () => {
-    console.log('working?');
-    mobileNav.style.display = "block";
-})
-//functions
+hamburger.addEventListener('click', showMobileNav);
+
+// //functions
 
 const classScroll = () => {
     let nav = document.querySelector('.main-header');
     nav.className = ('main-header-scroll');
+}
+
+function closeModal() {
+    backdrop.classList.add('hide');
+    modal.classList.add('hide');
+}
+
+function showMobileNav() {
+    mobileNav.style.display = "block";
 }
