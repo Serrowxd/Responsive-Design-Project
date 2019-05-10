@@ -13,7 +13,8 @@ body {
 }
 
 .modal-backdrop {
-    display: none; /* disabled for dev purposes*/
+    display: none;
+    /* disabled for dev purposes*/
     height: 100vh;
     width: 100vw;
     background-color: green;
@@ -24,7 +25,8 @@ body {
 }
 
 .modal-cookies {
-    display: none; /* disabled for dev purposes*/
+    display: none;
+    /* disabled for dev purposes*/
     transition: 4s;
     color: white;
     height: 100%;
@@ -74,15 +76,15 @@ body {
 .main-header-scroll {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     background-color: transparent;
     transition: 2s;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
 }
 
 .main-header-scroll a {
-    margin-left: 30px;
     text-decoration: none;
     color: white;
 }
@@ -98,13 +100,13 @@ body {
 .main-header {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     background-color: transparent;
-}   
+}
 
 .main-header a {
-    margin-left: 30px;
     text-decoration: none;
     color: white;
 }
@@ -115,15 +117,16 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .main-nav {
+    display: flex;
     display: none;
 }
 
 .main-nav_items {
-    align-items: flex-end;
-    flex-flow: column wrap;
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -145,6 +148,8 @@ body {
 
 .mobile-nav {
     display: none;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -178,12 +183,15 @@ body {
     bottom: 0;
     background: #006a2d;
     height: 50px;
-    width:  115px;
+    width: 115px;
     border-radius: 50px;
 }
 
 #product_overview {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: url("./images/jumbo.jpg");
     background-position: 25% 75%;
     width: 100%;
@@ -192,7 +200,7 @@ body {
 }
 
 #product_overview h1 {
-    font-size: 3vw;
+    font-size: 3rem;
     color: white;
     padding: 0;
     margin: 0;
@@ -200,12 +208,16 @@ body {
 
 .product_overview-wrapper {
     padding-top: 10%;
-    color: white; 
+    color: white;
 }
 
 .buy-now-btn-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    width: 10%;
+    width: 10rem;
     border: solid 3px white;
     font-size: 30px;
     color: white;
@@ -217,6 +229,10 @@ body {
 }
 
 .free-shipping-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 20px;
     background-color: #356B2E;
@@ -229,8 +245,8 @@ body {
     padding-top: 10px;
 }
 
-
 .spectrum-container {
+    
     background-color: #EBEBEB;
     width: 100%;
     text-align: center;
@@ -249,19 +265,26 @@ body {
 }
 
 .spectrum-wrapper {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
 .explain-thing {
-    display: inline-block;
-    width: 20%;
+    width: 100%;
     padding-bottom: 50px;
 }
 
 .buy-now-container {
-    background: linear-gradient(180deg,#006a2d 50%,#fff 40%);
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #006a2d 50%, #fff 40%);
     width: 100%;
 }
 
@@ -275,8 +298,8 @@ body {
     padding-left: 25px;
     width: 23%;
     text-align: center;
-    display: inline-block;
-    vertical-align: middle; 
+    display: blo;
+    vertical-align: middle;
 }
 
 .buy-now h1 {
@@ -288,7 +311,7 @@ body {
 }
 
 .buy-now ul {
-list-style: none;
+    list-style: none;
 }
 
 .buy-now img {
@@ -304,6 +327,7 @@ list-style: none;
     width: 25%;
     cursor: pointer;
 }
+
 .buy-now-btn:hover {
     background-color: #006a2d;
     color: white;
@@ -318,14 +342,14 @@ list-style: none;
 }
 
 .top-sellers {
-background-image: url("./images/parallax.png");
-height: 300px; 
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-text-align: center;
+    background-image: url("./images/parallax.png");
+    height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 .top-sellers h1 {
@@ -349,7 +373,7 @@ text-align: center;
     font-size: 2.3rem;
     outline: none;
     border: none;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2) !important
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) !important
 }
 
 input::placeholder {
@@ -358,8 +382,8 @@ input::placeholder {
 }
 
 #submit-btn {
-    display: inline-block;  
-    color: #006a2d; 
+    display: inline-block;
+    color: #006a2d;
     border-style: solid 6px #006a2d;
     background-color: white;
     font-size: 2.3rem;
@@ -380,7 +404,7 @@ footer {
     display: inline-block;
 }
 
-.footer-row > i {
+.footer-row>i {
     margin-left: 6px;
 }
 
@@ -403,8 +427,8 @@ footer {
     cursor: pointer;
     background: #d6249f;
     border-radius: 11px;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
 .fa-youtube-square:hover {
@@ -421,13 +445,13 @@ footer {
     cursor: pointer;
     background: -webkit-linear-gradient(#F1682C 60%, #4D4D4D 40%);
     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-cc-visa:hover {
     background: -webkit-linear-gradient(#F19E33 50%, #004B88 50%);
     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-cc-discover:hover {
@@ -440,27 +464,27 @@ footer {
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
     background: #356B2E;
-    border-radius: 50px; 
+    border-radius: 50px;
     border: solid 1px black;
-  }
+}
 
-  /* when the width of the page exceeds mobile, change from mobile to tablet view */
+/* when the width of the page exceeds mobile, change from mobile to tablet view */
 
-  /* When the width of the page exceeds tablets, change from mobile to desktop view */
-  @media (min-width: 1030px) {
-      .hamburger-toggle {
-          display: none;
-      }
+/* When the width of the page exceeds tablets, change from mobile to desktop view */
 
-      .main-nav {
-          display: block;
-      }
-  }
+@media (min-width: 1030px) {
+    .hamburger-toggle {
+        display: none;
+    }
+    .main-nav {
+        display: block;
+    }
+}

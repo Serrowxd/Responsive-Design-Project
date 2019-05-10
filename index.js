@@ -29,5 +29,5 @@ function closeModal() {
 }
 
 function showMobileNav() {
-    mobileNav.style.display = "block";
+    mobileNav.style.display = "flex";
 }
