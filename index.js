@@ -30,4 +30,5 @@ function closeModal() {
 
 function showMobileNav() {
     mobileNav.style.display = "flex";
+    backdrop.style.display = "block";
 }
