@@ -16,7 +16,7 @@ acceptCookiesButton.addEventListener('click', closeModal);
 
 hamburger.addEventListener('click', showMobileNav);
 
-// //functions
+//functions
 
 const classScroll = () => {
     let nav = document.querySelector('.main-header');

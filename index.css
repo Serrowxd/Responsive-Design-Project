@@ -3,6 +3,21 @@
     src: url("./fonts/Triumph\ wheels\ rough.ttf");
 }
 
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 -10px red
+    }
+    40% {
+        box-shadow: 0 0 20px red
+    }
+    60% {
+        box-shadow: 0 0 20px red
+    }
+    100% {
+        box-shadow: 0 0 -10px red;
+    }
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -107,9 +122,9 @@ body {
     display: block;
     color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 4rem;
     text-decoration: none;
-    vertical-align: middle;
+    font-family: 'Triumph Wheel';
 }
 
 .main-nav {
@@ -168,15 +183,17 @@ body {
     color: white;
     text-align: center;
     display: inline-block;
-    padding-top: 14px;
-    margin: 30px;
+    margin-bottom: 30px;
     position: fixed;
     right: 0;
     bottom: 0;
-    background: #006a2d;
+    background: #356B2E;
+    padding-top: 15px;
     height: 50px;
-    width: 115px;
-    border-radius: 50px;
+    width: 130px;
+    border-radius: 50px 0px 0px 50px;
+    animation: glowing 5000ms infinite;
+    cursor: pointer
 }
 
 #product_overview {
@@ -237,6 +254,7 @@ body {
 }
 
 .spectrum-container {
+    margin-top: 5%;
     background-color: #EBEBEB;
     width: 100%;
     text-align: center;
@@ -252,6 +270,7 @@ body {
     padding-top: 30px;
     margin: 0;
     font-size: 2.0rem;
+    margin-bottom: 3%;
 }
 
 .spectrum-wrapper {
@@ -274,7 +293,7 @@ body {
     flex-direction: row wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #006a2d 50%, #fff 40%);
+    background: linear-gradient(180deg, #356B2E 50%, #fff 40%);
     width: 100%;
 }
 
@@ -292,15 +311,19 @@ body {
 }
 
 .buy-now h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .buy-now h5 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .buy-now ul {
     list-style: none;
+}
+
+.buy-now li {
+    font-size: 1.7rem;
 }
 
 .buy-now img {
@@ -309,16 +332,16 @@ body {
 }
 
 .buy-now-btn {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     margin: 0 auto;
     background-color: white;
-    border: solid 2px #006a2d;
-    width: 25%;
+    border: solid 2px #356B2E;
+    width: 45%;
     cursor: pointer;
 }
 
 .buy-now-btn:hover {
-    background-color: #006a2d;
+    background-color: #356B2E;
     color: white;
 }
 
@@ -327,7 +350,32 @@ body {
 }
 
 .benefits {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
+    background-image: url('./images/benefits.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.benefits__header {
+    font-family: Triumph Wheel;
+    margin: 0 auto;
+    position: relative;
+    top: 23%;
+    font-size: 4.5rem;
+}
+
+.benefits-pictures-wrapper__stress {
+    margin: 30px;
+    border: solid 6px white;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.61);
 }
 
 .top-sellers {
@@ -346,12 +394,67 @@ body {
     color: white;
     font-size: 95px;
     padding: 60px;
-    background: url(./images/sign.png) no-repeat;
-    background-position: center;
+    margin-bottom: 4%;
+}
+
+.top-sellers-items__product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-sellers-items img {
+    width: 25%;
+}
+
+.top-sellers-items__title {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    padding: .5%;
+}
+
+.top-sellers-items__was {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #356B2E;
+    padding: .5%;
+}
+
+.top-sellers-items__is {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: black;
+    padding: .5%;
+}
+
+.top-sellers-item__button {
+    font-size: 1.9rem;
+    margin: 0 auto;
+    color: #356B2E;
+    background-color: white;
+    border: solid 2px #356B2E;
+    width: 15%;
+    cursor: pointer;
+}
+
+.top-sellers-item__button:hover {
+    background-color: #356B2E;
+    color: white;
+}
+
+#star-wrapper {
+    display: inline-block;
+    color: #F19E33;
+    padding: .5%;
 }
 
 .email-form {
-    padding-top: 3%;
+    margin-top: 10%;
     width: 100%;
     text-align: center;
     padding-bottom: 3%;
@@ -365,18 +468,29 @@ body {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) !important
 }
 
+#email-form:focus {
+    outline: solid 2px #356B2E;
+}
+
 input::placeholder {
     font-size: 1.2rem;
     text-align: center;
 }
 
 #submit-btn {
-    display: inline-block;
-    color: #006a2d;
-    border-style: solid 6px #006a2d;
+    border: 2px solid #356B2E;
     background-color: white;
-    font-size: 2.3rem;
+    color: #356B2E;
+    padding: 5px;
+    font-size: 2.0rem;
     cursor: pointer;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+#submit-btn:hover {
+    background-color: #356B2E;
+    color: white;
 }
 
 footer {
@@ -422,7 +536,7 @@ footer {
 
 .fa-youtube-square:hover {
     cursor: pointer;
-    color: red;
+    color: #356B2E;
 }
 
 .fa-bitcoin:hover {
@@ -481,7 +595,7 @@ footer {
 @media (max-width: 1030px) {
     .buy-now-container {
         display: block;
-        background: linear-gradient(180deg, #006a2d 50%, #fff 40%);
+        background: linear-gradient(180deg, #356B2E 50%, #fff 40%);
         width: 100%;
     }
     .buy-now {
