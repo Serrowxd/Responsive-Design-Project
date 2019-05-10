@@ -13,10 +13,8 @@ body {
 }
 
 .modal-backdrop {
-    display: none;
-    /* disabled for dev purposes*/
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: green;
     filter: brightness(5%);
     opacity: .7;
@@ -25,15 +23,17 @@ body {
 }
 
 .modal-cookies {
-    display: none;
-    /* disabled for dev purposes*/
     transition: 4s;
     color: white;
     height: 100%;
     width: 100%;
     z-index: 3;
     position: fixed;
-    text-align: center;
+    text-align: center;   
+}
+
+.modal-cookies img {
+    width: 75% 75%;   
 }
 
 .modal-cookies__heading {
@@ -47,11 +47,6 @@ body {
     color: black;
     background-color: white;
     z-index: 5;
-    position: absolute;
-    left: 47.5%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
 }
 
 .hamburger-toggle {
@@ -237,8 +232,7 @@ body {
     font-size: 20px;
     background-color: #356B2E;
     text-align: center;
-    height: 40px;
-    vertical-align: center;
+    height: 3rem;
 }
 
 .free-shipping-container h5 {
@@ -246,7 +240,6 @@ body {
 }
 
 .spectrum-container {
-    
     background-color: #EBEBEB;
     width: 100%;
     text-align: center;
@@ -298,7 +291,6 @@ body {
     padding-left: 25px;
     width: 23%;
     text-align: center;
-    display: blo;
     vertical-align: middle;
 }
 
@@ -487,4 +479,21 @@ footer {
     .main-nav {
         display: block;
     }
+    
+}
+
+@media (max-width: 1030px) {
+    .buy-now-container {
+        display: block;
+        background: linear-gradient(180deg, #006a2d 50%, #fff 40%);
+        width: 100%;
+    }
+    .buy-now {
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    
 }
