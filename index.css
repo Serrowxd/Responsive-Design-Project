@@ -41,7 +41,6 @@ body {
     position: absolute;
 }
 
-
 /* .modal-cookies {
     display: flex;
     flex-direction: column;
@@ -93,7 +92,8 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    margin-left: 1rem;
+    left: 2rem;
+    position: absolute;
 }
 
 .hamburger-toggle__bar {
@@ -104,7 +104,7 @@ body {
     margin: .5rem 0;
 }
 
-.main-header-scroll {
+/* .main-header-scroll {
     width: 100%;
     display: flex;
     align-items: center;
@@ -118,7 +118,7 @@ body {
 .main-header-scroll a {
     text-decoration: none;
     color: white;
-}
+} */
 
 .main-header_logo-scroll {
     display: block;
@@ -132,7 +132,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
     background-color: transparent;
 }
@@ -185,9 +185,14 @@ body {
     z-index: 100;
     top: 0;
     left: 0;
-    background: white;
+    background: #356B2E;
     width: 50%;
     height: 100vh;
+}
+
+.close {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .mobile-nav__items {
@@ -201,6 +206,12 @@ body {
 
 .mobile-nav__item {
     margin: 1rem 0;
+    font-size: 2.3rem;
+}
+
+.mobile-nav__item a {
+    color: white;
+    text-decoration: none;
 }
 
 .help {
@@ -250,7 +261,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 10rem;
+    width: 168px;
+    max-width: 168px;
+    min-width: 168px;
     border: solid 3px white;
     font-size: 30px;
     color: white;
@@ -359,10 +372,10 @@ body {
     margin: 0 auto;
     background-color: white;
     border: solid 2px #356B2E;
-    width: 45%;
-    cursor: pointer;
-    min-width: 45%;
-    max-width: 45%;
+    width: 168px;
+    max-width: 168px;
+    min-width: 168px;
+    cursor: pointer
 }
 
 .buy-now-btn:hover {
@@ -478,7 +491,7 @@ body {
 #star-wrapper {
     display: inline-block;
     color: #F19E33;
-    padding-bottom: 1%; 
+    padding-bottom: 1%;
 }
 
 .email-form {
@@ -526,6 +539,10 @@ footer {
     display: inline-block;
     background-color: #222222;
     color: white;
+}
+
+.footer-row h2 {
+    font-size: 2.3rem;
 }
 
 .footer-row a {
@@ -632,7 +649,7 @@ footer {
 /* When the width of the page exceeds tablets, change from mobile to desktop view */
 
 @media (max-width: 763) {
-    footer a{
+    footer a {
         display: block;
         color: red;
     }
@@ -646,12 +663,23 @@ footer {
     }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1100px) {
     .hamburger-toggle {
         display: none;
     }
     .main-nav {
         display: block;
+    }
+    .main-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: transparent;
+    }
+
+    .top-sellers-items__product img {
+        width: 20%;
     }
 }
 
@@ -664,7 +692,6 @@ footer {
     .buy-now {
         margin: 0;
         padding-top: 20px;
-        padding-left: 25px;
         width: 100%;
         text-align: center;
     }

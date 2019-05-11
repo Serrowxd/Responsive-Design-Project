@@ -5,6 +5,7 @@ const modal = document.querySelector('.modal-cookies');
 const acceptCookiesButton = document.getElementById('modal-cookies__button');
 const hamburger = document.querySelector('.hamburger-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
+const exitButton = document.querySelector('.close');
 //using var because let or const isn't working as a global variable here for some reason.
 var nav = document.querySelector('.main-header');
 
@@ -26,6 +27,8 @@ acceptCookiesButton.addEventListener('click', closeModal);
 
 hamburger.addEventListener('click', showMobileNav);
 
+exitButton.addEventListener('click', hideMobileNav);
+
 //functions
 
 function closeModal() {
@@ -36,4 +39,9 @@ function closeModal() {
 function showMobileNav() {
     mobileNav.style.display = "flex";
     backdrop.style.display = "block";
+}
+
+function hideMobileNav() {
+    mobileNav.style.display = "none";
+    backdrop.style.display = "none";
 }
