@@ -29,8 +29,8 @@ hamburger.addEventListener('click', showMobileNav);
 //functions
 
 function closeModal() {
-    backdrop.classList.add('hide');
-    modal.classList.add('hide');
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
 }
 
 function showMobileNav() {
