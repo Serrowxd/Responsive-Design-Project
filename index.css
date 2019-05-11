@@ -162,7 +162,7 @@ body {
     top: 0;
     left: 0;
     background: white;
-    width: 80%;
+    width: 50%;
     height: 100vh;
 }
 
@@ -304,7 +304,6 @@ body {
 
 .buy-now {
     padding-top: 20px;
-    padding-left: 25px;
     width: 23%;
     text-align: center;
     vertical-align: middle;
@@ -356,11 +355,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    text-align: center;
     background-image: url('./images/benefits.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 .benefits__header {
@@ -406,7 +406,7 @@ body {
 }
 
 .top-sellers-items img {
-    width: 25%;
+    width: 70%;
 }
 
 .top-sellers-items__title {
@@ -438,7 +438,9 @@ body {
     color: #356B2E;
     background-color: white;
     border: solid 2px #356B2E;
-    width: 15%;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
     cursor: pointer;
 }
 
@@ -450,7 +452,7 @@ body {
 #star-wrapper {
     display: inline-block;
     color: #F19E33;
-    padding: .5%;
+    padding-bottom: 1%; 
 }
 
 .email-form {
@@ -500,11 +502,24 @@ footer {
     color: white;
 }
 
+.footer-row a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-row a:hover {
+    border-bottom: solid 3px white;
+}
+
 .footer-row {
     text-align: center;
     margin: 3%;
     width: 18%;
     display: inline-block;
+}
+
+.footer-row__nav {
+    list-style: none;
 }
 
 .footer-row>i {
@@ -514,11 +529,13 @@ footer {
 .copyright-container {
     width: 100%;
     text-align: center;
+    display: inline-block;
+    padding-bottom: 1%;
 }
 
 .fa-facebook:hover {
     cursor: pointer;
-    color: #004B88;
+    color: rgb(57, 64, 70);
 }
 
 .fa-twitter-square:hover {
@@ -567,6 +584,11 @@ footer {
 
 ::-webkit-scrollbar {
     width: 15px;
+}
+
+.copyright-container a {
+    color: white;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar-track {
